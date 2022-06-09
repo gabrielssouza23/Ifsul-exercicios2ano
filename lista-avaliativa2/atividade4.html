@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    <style>
+  table, td{
+   border:1px solid #000;
+  }
+  td{
+   padding: 10px;
+  }
+  .vermelho{
+   background-color: #f00;
+  }
+  .verde{
+   background-color: #090;
+  }
+  .ciano{/*azul claro*/
+   background-color: #0ff;
+  }
+  .amarelo{
+   background-color: #dd0;
+  }
+  .azul{
+   background-color: #009;
+  }
+  .preto{
+   background-color: #000;
+  }
+  .branco{
+   background-color: #fff;
+  }
+  .laranja{
+   background-color: #f80;
+  }
+
+
+    </style>
+</head>
+<body>
+	<script>
+	document.write('<table>');
+	for(var i = 0; i <= 11; i++){
+		document.write('<tr>');
+		for(var j = 0; j <= 11; j++){
+			if(i == 5 || i == 6 || j == 3 || j == 4)
+		 		document.write('<td class="amarelo">&nbsp;&nbsp;&nbsp;&nbsp;</td>');
+		 	else
+		 		document.write('<td class ="azul">&nbsp;&nbsp;&nbsp;&nbsp;</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+	</script>
+</body>
+</html>
