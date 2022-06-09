@@ -1,0 +1,31 @@
+<script>
+
+    let combustivel = window.prompt("Insira o combustível utilizado");
+    let litro = window.prompt("Insira quantos litros foram abastecidos");
+    let valor;
+    let desconto;
+
+    if(combustivel == "gasolina" || combustivel == "Gasolina") {
+        valor = litro * 3.69;
+    }
+    if(combustivel == "álcool" || combustivel == "alcool" || combustivel == "Álcool" || combustivel == "Alcool") {
+        valor = litro * 2.90;
+    }
+    if(combustivel == "diesel" || combustivel == "Diesel") {
+        valor = litro * 3.05;
+    }
+    if(litro >= 40) {
+        desconto = 0.10
+    }
+    if(litro < 40) {
+        desconto = 0;
+    }
+    valor = valor - (valor * desconto); 
+    if(desconto == 0.10){
+        document.write("Desconto de 10%. Valor final a ser pago: ")
+    }
+    if(desconto == 0) {
+        document.write("Desconto de 0%. Valor final a ser pago: ")
+    }
+    document.write(valor.toFixed(2));
+</script>

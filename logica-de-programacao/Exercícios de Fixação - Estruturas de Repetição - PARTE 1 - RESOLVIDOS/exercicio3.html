@@ -1,0 +1,21 @@
+<script>
+	var valor,i;
+
+	// Aqui temos estrutura do comando for para repetir 10x, ou seja,
+	// essa repetição vai nos permitir repetir por 10x uma determinada rotina.
+	// Nesse caso, o que queremos repetir 10x?
+	// 1 - Solicitar um valor
+	// 2 - Apresentar o valor informado multiplicado 2
+	for(i = 1; i <= 10; i++){
+		// Aqui estamos solicitando o valor.
+		// Observe que utilizamos o i para dizer qual o número que está sendo solicitado.
+		valor = Number(window.prompt("Digite o valor " + i));	
+		// Aqui estamos apresentando o valor digitado multiplicado por 2.
+		// Podemos fazer imprimir direto no documento.write ou guardar o 
+		// resultado da multiplicação em uma variável. Qualquer uma das formas,
+		// está correta. Aqui vamos fazer diretamente com document.write.
+		document.write(valor + " x 2 = " + valor * 2 + "<br>");
+	}
+</script>
+
+	

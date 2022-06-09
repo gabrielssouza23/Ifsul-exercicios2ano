@@ -1,0 +1,18 @@
+<script>
+    let clientes = Number(window.prompt("Número de clientes"));
+    
+
+    for(let i = 0;i < clientes; i++){
+        let nome = window.prompt("nome do cliente");
+        let valor = Number(window.prompt("Valor gasto pelo cliente"));
+        if(valor >= 5000){
+            document.write(nome + ", você ganhou 10% de desconto!<br>");
+        }
+        if(valor >= 2500 && valor < 5000){
+            document.write(nome + ", você ganhou 5% de desconto!<br>");
+        }
+        if (valor < 2500) {
+            document.write(nome + ", venha até nossa loja! Temos preços especiais para você!<br>");
+        }
+    }
+</script>

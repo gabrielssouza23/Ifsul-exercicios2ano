@@ -1,0 +1,16 @@
+<script>
+    /* Crie um script, defina um vetor chamado elementos, faça a leitura de 10
+    números inteiros via window.prompt() armazenando os valores no vetor.
+    Calcule a soma de todos os valores digitados. Depois exiba o conteúdo do
+    vetor elementos mais a soma dos elementos. */
+
+    let elementos = [];
+    let elementosSoma = 0;
+    for(var i = 0; i <= 9; i++){
+        elementos[i] = Number(window.prompt("entre com um valor inteiro"));
+        elementosSoma = elementosSoma + elementos[i];
+    }
+    document.write(elementos + "<br>");
+    document.write(elementosSoma);
+    console.table(elementos);
+</script>

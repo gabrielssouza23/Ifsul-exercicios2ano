@@ -1,0 +1,22 @@
+<script>
+	var i,num,n1,n2,media;
+	
+	num = Number(window.prompt("Informe o número de alunos:"));
+	
+	for(i = 1; i <= num; i++){
+		n1 = Number(window.prompt("Informe a N1 do aluno " + i));
+		n2 = Number(window.prompt("Informe a N2 do aluno " + i));
+		media = (n1 + n2) / 2;
+		document.write("<strong>Aluno</strong> " + i + "<br>");
+		document.write("Media = " + media + "<br>");
+		if(media >= 6){
+			document.write("APROVADO!<br>");
+		}
+		else{
+			document.write("REPROVADO!<br>");	
+		}
+	}	
+	
+</script>
+
+	

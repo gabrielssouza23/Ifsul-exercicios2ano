@@ -1,0 +1,20 @@
+<script>
+
+    let peso;
+    let pesoanterior;
+    let contador = 1;
+    let media;
+
+    do{
+        peso = Number(window.prompt("entre com o peso ou insira um peso negativo pra sair"));
+        if(peso < 0){
+            peso = false;
+        }
+        contador++;
+        pesoanterior = peso;
+        if(peso >= 60){
+            media = peso + peso / contador;
+            document.write(media + '<br>');
+        }
+    } while(peso)
+</script>
