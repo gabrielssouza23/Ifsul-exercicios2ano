@@ -1,0 +1,11 @@
+<script>
+    /* Crie um script que solicita 3 números, depois armazene os números solicitados em
+    um vetor de forma ordenada crescente */
+
+    let arr = [];
+    for(var i = 0; i < 3; i++){
+        arr.push(Number(window.prompt("insira um número")));
+    }
+    arr.sort((a, b) => a - b);
+    document.write(arr);
+</script>

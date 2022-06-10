@@ -1,0 +1,12 @@
+<script>
+    /* Crie um script que solicite quantos números o usuário vai digitar, faça a leitura
+    conforme o número informado pelo usuário. Armazene os números em um vetor, por
+    fim mostre o vetor de forma ordenada. */
+
+    let user = Number(window.prompt("quantos números serão digitados?"));
+    let arr = [];
+    for(var i = 0; i < user; i++){
+        arr[i] = Number(window.prompt("insira um valor"));
+    }
+    document.write(arr.sort((a, b) => a - b));
+</script>
