@@ -1,0 +1,25 @@
+<script>
+    /* • Use o array do exercício anterior.
+    • Organize o array em ordem crescente.
+    • Usando JS, insira o conteúdo do array em
+    uma tabela HTML de 9x10. */
+
+    let arr = [];
+    for(var i = 0; i <= 100; i++){
+        const num = Math.random() * 100;
+        arr.push(num);
+    }
+    arr.sort((a, b) => a - b);
+    console.table(arr);
+
+    document.write('<table border = "1">');
+    for(var j = 0; j <= 8; j++){
+        document.write('<tr>');
+        for(var t = 0; t <= 9; t++){
+            document.write('<td>arr</td>');
+        }
+        document.write('</tr>')
+    }
+    document.write('</table>')
+
+</script>

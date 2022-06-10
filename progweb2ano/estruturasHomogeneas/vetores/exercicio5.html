@@ -1,0 +1,19 @@
+<script>
+    /* Gere 100 número aleatórios entre 0 e 1000.
+    • Use a função random ao lado.
+    • Insira os números gerados em um array usando
+    o push.
+    • Remova do array os 5 primeiros e os 5 últimos
+    números.
+    • Use slice para remover os números.
+    • Mostre o conteúdo do array no console. */
+
+    let arr = [];
+    for(var i = 0; i <= 100; i++){
+        const num = Math.random() * 100;
+        arr.push(num);
+    }
+    console.table(arr);
+    arr.slice(-5);
+    console.table(arr);
+</script>
